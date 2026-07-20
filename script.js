@@ -1,7 +1,4 @@
-// ============================
-// MOBILE MENU
-// ============================
-
+// For Hamburger animation
 const hamburger = document.querySelector(".hamburger");
 
 const navLinks = document.querySelector(".nav-links");
@@ -12,10 +9,7 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
 });
 
-// ============================
-// ACTIVE NAV LINK
-// ============================
-
+// Active Nav Link
 const sections = document.querySelectorAll("section");
 
 const links = document.querySelectorAll(".nav-links a");
@@ -40,10 +34,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ============================
-// SCROLL REVEAL
-// ============================
-
+// Scroll animation
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -67,9 +58,7 @@ document
     observer.observe(item);
   });
 
-// ============================
-// SMOOTH CLOSE MENU
-// ============================
+// Closing Menu
 
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
@@ -79,9 +68,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-// ============================
-// CURRENT YEAR
-// ============================
+// Current Year - Footer
 
 const year = new Date().getFullYear();
 
@@ -90,3 +77,11 @@ const footerYear = document.querySelector(".footer-year");
 if (footerYear) {
   footerYear.textContent = year;
 }
+
+// Top to Bottom Scroll
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  scrollTopBtn.classList.toggle("show", window.scrollY > 400);
+});

@@ -1,31 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Shruti Dubey | Full Stack Developer</title>
-
     <meta
       name="description"
       content="Portfolio of Shruti Dubey - Full Stack Developer specializing in React, Node.js, Express, MongoDB and Python."
     />
-
+    <!-- Favicon -->
     <link rel="icon" href="assets/favicon/GitProfile-modified.png" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Font Awesome Link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
+    <!-- Devicons Link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -73,9 +71,13 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section class="hero" id="home">
         <div class="hero-content">
-          <p class="hero-greeting">👋 Hi, I'm</p>
+          <p class="hero-greeting">
+            <i class="fa-solid fa-hand-sparkles hero-wave"></i>
+            Hi, I'm
+          </p>
 
           <h1>Shruti Dubey</h1>
 
@@ -84,7 +86,7 @@
           <div class="about-highlights">
             <div class="highlight">
               <i class="fa-solid fa-location-dot"></i>
-              <span>India</span>
+              <span>India, IN</span>
             </div>
 
             <div class="highlight">
@@ -149,47 +151,89 @@
         <div class="about-container">
           <div class="about-image">
             <img src="/assets/images/about.gif" alt="Shruti Dubey" />
+
+            <blockquote class="about-quote">
+              "Curious by nature. Developer by choice."
+            </blockquote>
           </div>
 
           <div class="about-content">
-            <div class="about-cards">
-              <div class="about-card">
-                <i class="fa-solid fa-briefcase"></i>
+            <p class="about-intro">
+              I've always loved creating things. What started with art, crafts
+              and hands-on creativity eventually led me to web development,
+              where I found the perfect blend of creativity, logic and
+              problem-solving. Today, I'm constantly challenging myself to
+              become a better Full Stack Developer by building real-world
+              applications and exploring how modern software works from end to
+              end.
+            </p>
 
-                <h3>Experience</h3>
+            <div class="about-story">
+              <div class="story-card">
+                <div class="story-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
 
-                <p>1.5+ Years</p>
+                <div>
+                  <h4>Beyond Code</h4>
+
+                  <p>
+                    I love travelling, trekking and spending time in nature.
+                    Music helps me unwind, and I'm a huge animal lover with two
+                    adopted indie dogs that mean the world to me.
+                  </p>
+                </div>
               </div>
 
-              <div class="about-card">
-                <i class="fa-solid fa-graduation-cap"></i>
+              <div class="story-card">
+                <div class="story-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
 
-                <h3>Education</h3>
+                <div>
+                  <h4>Curiosity Drives Me</h4>
 
-                <p>BCA • 87.3%</p>
+                  <p>
+                    I'm someone who enjoys learning from people, asking
+                    questions and understanding how things work. Whether it's a
+                    new technology or a different perspective, I believe every
+                    bit of knowledge helps us grow.
+                  </p>
+                </div>
+              </div>
+
+              <div class="story-card">
+                <div class="story-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div>
+                  <h4>Building for the Future</h4>
+
+                  <p>
+                    Right now I'm building <strong>FlowSync ERP</strong>, a
+                    MERN-based ERP platform that allows me to dive deeper into
+                    frontend, backend, databases, authentication, architecture
+                    and modern software engineering practices.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="about-next">
+          <div class="about-next-content">
+            <div>
+              <span>Want to know how my journey started?</span>
 
-            <div class="about-description">
-              <p>
-                I'm a <strong>Full Stack Developer</strong> with 1.5+ years of
-                professional experience building scalable web applications, REST
-                APIs, enterprise integrations, and business solutions.
-              </p>
-
-              <p>
-                At <strong>Conversion Pro LLP</strong>, I've worked on React.js,
-                Node.js, Express.js, MongoDB, MySQL, Python, Shopify, WordPress,
-                Zoho integrations, and enterprise middleware solutions while
-                contributing to production-ready applications.
-              </p>
-
-              <p>
-                Outside work, I'm currently building
-                <strong>FlowSync ERP</strong>, a complete MERN-based ERP
-                platform to strengthen modern software engineering practices.
-              </p>
+              <h4>Explore my career highlights</h4>
             </div>
+
+            <a href="#highlights" class="about-next-link">
+              View Timeline
+
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -526,7 +570,7 @@
               </div>
 
               <div class="skill">
-                <i class="fa-brands fa-aws"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
                 <span>AWS</span>
               </div>
 
@@ -693,48 +737,81 @@
         <div class="section-heading">
           <span>Highlights</span>
 
-          <h2>Career Highlights</h2>
+          <h2>My Journey</h2>
         </div>
 
         <div class="highlights-timeline">
-          <!-- Award -->
+          <!-- Rising Star Award -->
 
           <div class="highlight-item">
             <div class="highlight-dot award"></div>
 
             <div class="highlight-content">
-              <span class="highlight-date"> March 2025 </span>
+              <span class="highlight-date">March 2025</span>
 
-              <h3>Rising Star of the Quarter</h3>
+              <h3 class="highlight-title">
+                <i class="fa-solid fa-trophy award-icon"></i>
+
+                Rising Star of the Quarter
+              </h3>
 
               <h4>Conversion Pro LLP</h4>
 
               <p>
-                Recognized with the
-                <strong>Rising Star Award</strong>
-                for consistently delivering quality solutions, taking ownership
-                of challenging tasks, and making meaningful contributions to
-                client and internal development projects.
+                Honored with the
+                <strong>Rising Star Award</strong> for consistently delivering
+                high-quality solutions, taking ownership of challenging tasks,
+                and contributing to impactful client and internal development
+                projects.
               </p>
             </div>
           </div>
-          <!-- Training -->
+
+          <!-- Internship -->
+
           <div class="highlight-item">
-            <div class="highlight-dot"></div>
+            <div class="highlight-dot internship"></div>
 
             <div class="highlight-content">
-              <span class="highlight-date"> Feb 2023 – Apr 2023 </span>
+              <span class="highlight-date">Feb 2023 – Apr 2023</span>
 
-              <h3>Web Development Intern</h3>
+              <h3 class="highlight-title">
+                <i class="fa-solid fa-laptop-code internship-icon"></i>
+
+                Web Development Internship
+              </h3>
 
               <h4>Adityapur Auto Cluster</h4>
 
               <p>
-                Successfully completed an intensive web development internship
-                focused on <strong>Python</strong>, <strong>Django</strong>,
-                HTML, CSS and JavaScript. As the final outcome, I designed and
-                developed <strong>Sangeet</strong>, my first complete web
-                application, which was later deployed on GitHub Pages.
+                Completed a hands-on web development internship focused on
+                <strong>Python</strong>, <strong>Django</strong>, HTML, CSS and
+                JavaScript. As part of the program, I designed and developed
+                <strong>Sangeet</strong>, my very first web application, which
+                was later deployed on GitHub Pages.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education -->
+
+          <div class="highlight-item">
+            <div class="highlight-dot education"></div>
+
+            <div class="highlight-content">
+              <span class="highlight-date">2020 – 2023</span>
+
+              <h3 class="highlight-title">
+                <i class="fa-solid fa-graduation-cap education-icon"></i>
+
+                Bachelor of Computer Applications
+              </h3>
+
+              <h4>Jamshedpur Women's College</h4>
+
+              <p>
+                Graduated with a <strong>9.8 CGPA (87.3%)</strong> and a strong
+                foundation in programming and web development.
               </p>
             </div>
           </div>
@@ -794,7 +871,9 @@
 
       <p>© 2026 All Rights Reserved.</p>
     </footer>
-
+    <a href="#home" id="scrollTopBtn" aria-label="Scroll to top">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
     <script src="script.js"></script>
   </body>
 </html>
