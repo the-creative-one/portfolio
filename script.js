@@ -85,3 +85,17 @@ const scrollTopBtn = document.getElementById("scrollTopBtn");
 window.addEventListener("scroll", () => {
   scrollTopBtn.classList.toggle("show", window.scrollY > 400);
 });
+
+// Theme Toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  const icon = themeToggle.querySelector("i");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
